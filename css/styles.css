@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+body{
+    background-color: #fcfbfc;
+}
+
+.menu{
+    position: fixed;
+    width: 70px;
+    height: 100%;
+    left: 0px;
+    background-color: #f8f4f8;
+    transition-duration: 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    min-width: 70px;
+    box-shadow:inset 0px 1px 5px 2px #f1f0f1; 
+}
+.menu-icons{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.menu-icons li{
+    display: flex;
+    justify-content: center;
+}
+.menu-icons li i{
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+.menu-icons li:first-child{
+    margin-top: 20px;
+}
+
+.active{
+    color: blue;
+    transition-duration: 700ms;
+}
+.menu-icons li i:hover{
+    color: rgb(0, 132, 255) ;
+    transition-duration: 300ms;
+}
+.menu-profile{
+    font-size: 18px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.menu-profile:hover{
+  color: rgb(0, 132, 255) ;
+  transition-duration: 300ms;
+}
+
+#frm{
+    margin-top: 20px;
+}
+#frm input[type=search]{
+    border: 0;
+    background-color: transparent;
+}
+#frm input[type=search]:focus{
+    outline: 0;
+}
+#frm input[type=search]::placeholder{
+    color: #b9b8b8;
+}
+.search-icon{
+    color: #dad8d8;
+    margin-right: 10px;
+}
+.parag{
+  padding-right: 20px;
+}
+/* /////////////////////// */
+
+.chartvalue{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;  
+  font-family:  cursive;
+  font-weight: bold;
+}
+.chart{
+  max-width: 200px;
+  max-height: 200px;
+  margin:0;
+}
+.progtop{
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: bold;
+  color: 
+}
+.progtop span{
+  font-size: 12px;
+  color: #c0bebe;
+}
+.progmid{
+  font-size: 10px;
+  color: #c0bebe;;
+}
+.bg-blue{
+  background-color: #007bff;;
+}
+.heart{
+  width: 60px;
+  height: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 1px 0px 15px 1px rgb(230, 228, 228);
+  cursor: pointer;
+ 
+}
+.heart i{
+  font-size: 25px;
+  color: #007bff;
+  font-weight: normal;
+transition-duration: 300ms;
+}
+.heartbold{
+  font-weight: bold;
+
+}
+
+
+.box-content .text-center a{
+  color: #4d4d4d;
+  font-size: 16px;
+  text-decoration: none !important;
+  padding-top: 15px;
+  font-weight: bold;
+
+
+}
+.box-content .text-center a:hover{
+  color: black;
+}
+
+
+.sidebar{
+  margin-left: 150px;
+}
+.hacksawpic{
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 2px 5px 20px 10px rgb(238, 238, 238); 
+  
+}
+.hacksawpic img{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 50px;
+}
+
+.play{
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 1px 0px 15px 1px rgb(230, 228, 228);
+  background-color: #fcfbfc;
+  left: 45px;
+  bottom: -10px;
+  cursor: pointer;
+}
+.play i{
+  font-size: 25px; 
+}
+.btns{
+  display: flex;
+  font-size: 10px;
+
+}
+.btns .btn{
+  font-size: 10px !important;
+
+}
+.topside{
+  font-family:'Times New Roman', Times, serif;
+  color: #969696;
+  font-size: 14px;
+}
+
+.bottomside{
+  font-family:'Times New Roman', Times, serif;
+ 
+  font-size: 16px;
+}
+.lastbottomside{
+  font-size: 18px;
+}
+.progress-bar{
+  transition-duration: 1.5s;
+  width: 0px;
+}
+.owl-carusel{
+  padding-right: 50px;
+}
+.card{
+  max-width: 200px;
+
+  
+}
+.card img {
+  border-radius: 15px !important;
+  width: 100%;
+  height: 200px;
+}
+@media(min-width: 768px){
+  .carusel-pic{
+    margin-top: 10px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .carusel-label{
+    font-size: 15px;
+  }
+
+  .hacksawpic img{
+    padding-left: 0;
+  }
+  .play{
+    left: -20px;
+    bottom: -20px;
+  }
+  .parag{
+    padding-right: 50px;
+  }
+}
+
+
+@media(min-width: 992px){
+
+.sidebar{
+  margin-left: 0px;
+}
+.hacksawpic{
+  width: auto;
+}
+.parag{
+  padding-right: 80px;
+}
+}
